@@ -80,3 +80,21 @@ If you would like to build off of this sample to add chat capabilities to your o
 - [FluentUI](https://developer.microsoft.com/en-us/fluentui#/) - Microsoft powered UI library
 - [React](https://reactjs.org/) - Library for building user interfaces
 - [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-3.1) - Framework for building web applications
+
+
+## Install .NET Core and run on Linux
+
+1. Download the bash script [dotnet-install.sh](https://dot.net/v1/dotnet-install.sh)
+2. Install the preferred version, in this case .NET 3.1 is required
+    ```bash
+    sudo bash dotnet-install.sh --install-dir /usr/share/dotnet -channel 3.1
+    ```
+3. Build the .NET app
+    ```bash
+    cd Chat
+    sudo /usr/share/dotnet/dotnet build
+    ```
+4. Run the .NET app
+    ```bash
+    sudo /usr/share/dotnet/dotnet run
+    ```
